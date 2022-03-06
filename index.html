@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica Pasteleria</title>
+        <img src="./LA ESPECIAL.png" alt="La especial">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            /* Estilo de header */
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+    
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+                float: left;
+                width: 50%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 10px;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px;
+            }
+    
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+    
+            /* Estilo de footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 600px) {
+    
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Pasteleria "La especial"</h1>
+        <h2>Pasteles deliciosos para toda ocasión</h2>
+<nav>
+        <h3>¡Checa nuestros sabores! </h3>
+    <ul>
+        <li> Fresa .......................... $220</li>
+        <li> Limon .......................... $230 </li>
+        <li> Vainilla ....................... $210</li>
+        <li> Chocolate ...................... $250</li>
+        <li>Nuez ............................ $240</li>
+        <li>Tres leches ..................... $230</li>
+        <li>Rompope ......................... $210</li>
+        <li>Chocoflan ....................... $260</li>
+        <li>Zarzamora ....................... $250</li>
+        <li>Frutos Rojos .................... $270</li>
+    </ul>
+</nav>
+
+<nav>
+    <h3>¡Checa nuestros adornos! </h3>
+    <ul>
+        <li> Balones ............... $80</li>
+        <li> Globos ................ $80</li>
+        <li> Qinceañera ............ $120 </li>
+        <li>Novios ................. $200</li>
+        <li>Dinosaurios ............ $90</li>
+        <li>Peppa Pig .............. $100</li>
+        <li>Glaceado ................$50</li>
+        <li>Betun ...................$80</li>
+    </ul>
+</nav>
+
+<h2>Prepare su conbinación preferida</h2>
+
+<h3>Paso.-1 Seleccione sus sabores preferidos</h3>
+ 
+    <input type="checkbox" id="topping1" name="topping1" value="Fresa">
+    <label for="topping1">Fresa</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Limon">
+    <label for="topping2">Limon</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+    <label for="topping3">Vainilla</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Chocolate">
+    <label for="topping4">Chocolate</label><br>
+    <input type="checkbox" id="topping5" name="topping5" value="Nuez">
+    <label for="topping5">Nuez</label><br>
+    <input type="checkbox" id="topping6" name="topping6" value="Tres leches">
+    <label for="topping6">Tres leches</label><br>
+    <input type="checkbox" id="topping7" name="topping7" value="Rompope">
+    <label for="topping7">Rompope</label><br>
+    <input type="checkbox" id="topping8" name="topping8" value="Chocoflan">
+    <label for="topping8">Chocoflan</label><br>
+    <input type="checkbox" id="topping9" name="topping9" value="Zarzamora">
+    <label for="topping9">Zarzamora</label><br>
+    <input type="checkbox" id="topping10" name="topping10" value="Frutos Rojos">
+    <label for="topping10">Frutos Rojos</label><br><br>
+    
+    <h3>Paso.-2 Seleccione sus adornos preferidos</h3>
+
+    <input type="Checkbox" id="adorno1" name="adorno1" value="Balones">
+    <label for="adorno1">Balones</label><br>
+    <input type="Checkbox" id="adorno2" name="adorno2" value="Globos">
+    <label for="adorno2">Globos</label><br>
+    <input type="Checkbox" id="adorno3" name="adorno3" value="Quinceañera">
+    <label for="adorno3">Quinceañera</label><br>
+    <input type="Checkbox" id="adorno4" name="adorno4" value="Novios">
+    <label for="adorno4">Novios</label><br>
+    <input type="Checkbox" id="adorno5" name="adorno5" value="Dinosaurios">
+    <label for="adorno5">Dinosaurios</label><br>
+    <input type="Checkbox" id="adorno6" name="adorno6" value="Peppa Pig">
+    <label for="adorno6">Peppa Pig</label><br>
+    <input type="Checkbox" id="adorno7" name="adorno7" value="Glaceado">
+    <label for="adorno7">Glaceado</label><br>
+    <input type="Checkbox" id="adorno8" name="adorno8" value="Betun">
+    <label for="adorno8">Betún</label><br> 
+    
+
+<h3>Paso.-3 Registre sus datos por favor y presione enviar para proceder con su pedido</h3>
+
+    <label for="Nombre">Nombre y apellidos</label><br>
+    <input type="text" id="Nombre" name="Nombre"><br><br>
+
+    <label for="correo1">Correo electronico</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <label for="tel1">Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+    <label for="Extra1">Descripción general del pastel</label><br>
+    <input type="text" id="Extra1" name="Extra1"><br><br>
+
+    <label for="Extra2">Selección de sabores y adornos</label><br>
+    <input type="text" id="Extra2" name="Extra2"><br><br>
+
+    <input type="button" id="boton1" name="boton1" value="Enviar" onclick="alert('Pedido enviado, ¡Gracias por su preferencia!');"><br><br>
+<br><br>
+
+    </body>
+    <footer>
+        <p>Pasteleria la especial</p>
+        <p>Horario de 9 a 18 Hrs</p>
+        <p>Calle dulce de leche #22 Col. Caramelo</p>
+        <p>Telefonos: (55)1234-5678  (56)5658-1111</p><br><br>
+
+    </footer>
+</html>
