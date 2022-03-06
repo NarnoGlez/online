@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inventario Pasteleria</title>
+        <img src="./LA ESPECIAL.png" alt="La especial">
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #ccc;
+                padding: 20px;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+           
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+    
+            /* Estilo de footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 600px) {
+    
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Pasteleria "La especial"</h1>
+        <h2>Inventario sabores</h2>
+
+        <ul>
+            <li> Fresa .......................... 20 Kg</li>
+            <li> Limon .......................... 16 Kg</li>
+            <li> Vainilla ....................... 21 Kg</li>
+            <li> Chocolate ...................... 42 Kg</li>
+            <li>Nuez ............................ 34 kg</li>
+            <li>Tres leches ..................... 10 Kg</li>
+            <li>Rompope ......................... 16 Lts</li>
+            <li>Chocoflan ....................... 5 Kg</li>
+            <li>Zarzamora ....................... 11 Kg</li>
+            <li>Frutos Rojos .................... 5 Kg</li>
+        </ul>
+
+        <h2>Inventario adornos </h2>
+         <ul>
+            <li> Balones ............... 20 Pz</li>
+            <li> Globos ................ 50 Pz</li>
+            <li> Qinceañera ............ 12 Pz</li>
+            <li>Novios ................. 10 Pz</li>
+            <li>Dinosaurios ............ 9 Pz</li>
+            <li>Peppa Pig .............. 6 Pz</li>
+            <li>Glaceado ................20 Pz</li>
+            <li>Betun ...................40 Pz</li>
+         </ul>
+        <h2>Pedidos por entregar</h2>
+
+     <TABLE BORDER>
+	    <TR>
+	    	<TH>Cliente</TH> <TH>Sabores</TH> <TH>Adornos</TH>
+	    </TR>
+	    <TR>
+	    	<TD>Rodrigo Martinez</TD> <TD>Fresa, Chocolate</TD> <TD>Balones</TD>
+    	</TR>
+	    <TR>
+    		<TD>Narno Gonzalez</TD> <TD>Chocolate</TD> <TD>Quinceañera</TD>
+    	</TR>
+     </TABLE><br><br>	
+
+
+    </body>
+    <footer>
+        <p>Pasteleria la especial</p>
+        <p>Horario de 9 a 18 Hrs</p>
+        <p>Calle dulce de leche #22 Col. Caramelo</p>
+        <p>Telefonos: (55) 1234-5678  (56) 5658-1111</p><br><br>
+
+    </footer>
+</html>
